@@ -5,3 +5,6 @@
 - [zad3_motyw](https://nk68881.github.io/zad3_motyw/)
 - [zad4](https://nk68881.github.io/zad4/)
 - [zad5](https://nk68881.github.io/zad5/)
+- [zad6](https://nk68881.github.io/zad6/)
+- [zad7](https://nk68881.github.io/zad7/)
+- [zad8](https://nk68881.github.io/zad8/)

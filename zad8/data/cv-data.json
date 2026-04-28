@@ -1,0 +1,26 @@
+{
+  "skills": [
+    "C# / .NET (ASP.NET Core, Blazor, MAUI, WPF, Windows Forms)",
+    "Entity Framework Core",
+    "Databases: MySQL, MS SQL Server, SQLite",
+    "OOP, SOLID, KISS, DRY principles",
+    "Git & version control",
+    "Microsoft Azure",
+    "Design Patterns & Algorithms",
+    "REST API & SignalR"
+  ],
+  "projects": [
+    {
+      "name": "Personal Budget Tracker",
+      "description": "A .NET MAUI cross-platform app for tracking personal expenses and income with SQLite storage."
+    },
+    {
+      "name": "Chat Application",
+      "description": "Real-time chat built with ASP.NET Core and SignalR, featuring user authentication and message history."
+    },
+    {
+      "name": "Portfolio Website",
+      "description": "Static website showcasing projects, built with HTML, CSS, and JavaScript."
+    }
+  ]
+}

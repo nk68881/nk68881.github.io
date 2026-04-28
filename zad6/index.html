@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nikolaj Kurkul - CV</title>
+  <link id="theme-stylesheet" rel="stylesheet" href="css/red.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="profile">
+      <img src="images/photo.png" alt="Nikolaj Kurkul - profile photo" />
+    </div>
+    <div class="header-info">
+      <h1>Nikolaj Kurkul</h1>
+      <p class="subtitle">C# Developer</p>
+      <p class="links">
+        <a href="https://github.com/nk68881" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/nk68881" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </p>
+    </div>
+    <div class="header-controls">
+      <button id="theme-toggle" class="ctrl-btn">Switch to Green Theme</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="section-header">
+        <h2>Contact</h2>
+        <button class="toggle-btn">Hide</button>
+      </div>
+      <div class="section-content">
+        <ul class="list">
+          <li><strong>Email:</strong> <a href="mailto:nkurku1@stu.vistula.edu.pl">nkurku1@stu.vistula.edu.pl</a></li>
+          <li><strong>Phone:</strong> <a href="tel:+48123456789">+48 123 456 789</a></li>
+          <li><strong>City:</strong> Warsaw, Poland</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>About me</h2>
+        <button class="toggle-btn">Hide</button>
+      </div>
+      <div class="section-content">
+        <p>
+          I'm a computer science student with a solid foundation in C# and .NET
+          development. Eager to contribute to a dynamic team and motivated to
+          reach new tasks and highs. Through hands-on experience in different
+          C# frameworks, I am well-equipped to contribute effectively.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>Skills</h2>
+        <button class="toggle-btn">Hide</button>
+      </div>
+      <div class="section-content">
+        <ul id="skills-list" class="skills-list"></ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>Experience</h2>
+        <button class="toggle-btn">Hide</button>
+      </div>
+      <div class="section-content">
+        <article class="experience-item">
+          <h3>Junior C# Developer – ABC Tech</h3>
+          <p><strong>2024 – present</strong></p>
+          <p>Developed and maintained web applications using ASP.NET Core and Blazor. Collaborated with a team using Git
+            and Azure DevOps.</p>
+        </article>
+        <article class="experience-item">
+          <h3>Intern C# Developer – XYZ Solutions</h3>
+          <p><strong>2023 – 2024</strong></p>
+          <p>Built internal tools with Windows Forms and WPF. Worked with MS SQL Server and Entity Framework Core.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>Education</h2>
+        <button class="toggle-btn">Hide</button>
+      </div>
+      <div class="section-content">
+        <ul class="list">
+          <li>
+            <strong>2023 – 2027</strong><br />
+            Computer Science – Bachelor's Degree<br />
+            University of Vistula, Warsaw
+          </li>
+          <li>
+            <strong>2019 – 2023</strong><br />
+            Computer Science – Secondary Special Education<br />
+            Technical College, Warsaw
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>Projects</h2>
+        <button class="toggle-btn">Hide</button>
+      </div>
+      <div class="section-content">
+        <ul id="projects-list" class="list"></ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>Contact Me</h2>
+        <button class="toggle-btn">Hide</button>
+      </div>
+      <div class="section-content">
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name <span class="required">*</span></label>
+              <input type="text" id="first-name" name="first-name" autocomplete="given-name" />
+              <span class="field-error" id="first-name-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name <span class="required">*</span></label>
+              <input type="text" id="last-name" name="last-name" autocomplete="family-name" />
+              <span class="field-error" id="last-name-error"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email <span class="required">*</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" />
+            <span class="field-error" id="email-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message <span class="required">*</span></label>
+            <textarea id="message" name="message" rows="5"></textarea>
+            <span class="field-error" id="message-error"></span>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="submit-btn">Send Message</button>
+          </div>
+          <p class="form-success" id="form-success" hidden>
+            ✓ Your message has been sent successfully!
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Nikolaj Kurkul 68881</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

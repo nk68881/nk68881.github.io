@@ -1,0 +1,386 @@
+:root {
+  --dark: #7f1d1d;
+  --light: #fef2f2;
+  --accent: #dc2626;
+  --text: #450a0a;
+  --muted: #7f1d1d;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--light);
+  color: var(--text);
+  padding: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: var(--dark);
+  color: white;
+  padding: 28px 32px;
+  margin-bottom: 24px;
+  border-radius: 10px;
+}
+
+.profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  flex-shrink: 0;
+}
+
+.header-info h1 {
+  font-size: 32px;
+  margin-bottom: 4px;
+}
+
+.header-info .subtitle {
+  font-size: 16px;
+  color: #d1d5db;
+  margin-bottom: 10px;
+}
+
+.links {
+  display: flex;
+  gap: 16px;
+}
+
+.links a {
+  color: #fee2e2;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* Main sections */
+main {
+  display: grid;
+  gap: 24px;
+}
+
+.section {
+  background: white;
+  padding: 24px 28px;
+  border-radius: 4px;
+  border-left: 5px solid var(--accent);
+}
+
+.section h2 {
+  font-size: 20px;
+  margin-bottom: 14px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--dark);
+  color: var(--accent);
+}
+
+.section p {
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+/* Lists */
+.list {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.list a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.list a:hover {
+  text-decoration: underline;
+}
+
+.skills-list {
+  list-style: disc;
+  padding-left: 20px;
+  display: grid;
+  gap: 6px;
+  color: var(--muted);
+}
+
+/* Experience */
+.experience-item {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #fecaca;
+}
+
+.experience-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.experience-item h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+  color: var(--accent);
+}
+
+.experience-item p {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.5;
+  margin-top: 4px;
+}
+
+/* Contact Form */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--text);
+}
+
+.form-group .required {
+  color: var(--accent);
+}
+
+.form-group input,
+.form-group textarea {
+  border: 1px solid #fca5a5;
+  border-radius: 4px;
+  padding: 8px 10px;
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--text);
+  background: #fff;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.form-group input.input-error,
+.form-group textarea.input-error {
+  border-color: var(--accent);
+}
+
+.field-error {
+  font-size: 12px;
+  color: var(--accent);
+  margin-top: 4px;
+  min-height: 16px;
+}
+
+.form-actions {
+  margin-top: 4px;
+}
+
+.submit-btn {
+  padding: 10px 24px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.submit-btn:hover {
+  background: var(--dark);
+}
+
+.form-success {
+  margin-top: 12px;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Notes */
+.notes-input-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.notes-input-row input {
+  flex: 1;
+  border: 1px solid #fca5a5;
+  border-radius: 4px;
+  padding: 8px 10px;
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--text);
+  background: #fff;
+  transition: border-color 0.2s;
+}
+
+.notes-input-row input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.add-note-btn {
+  padding: 8px 18px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: inherit;
+  white-space: nowrap;
+}
+
+.add-note-btn:hover {
+  background: var(--dark);
+}
+
+.notes-list {
+  list-style: none;
+  display: grid;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.notes-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff5f5;
+  border: 1px solid #fecaca;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.notes-item-text {
+  flex: 1;
+  word-break: break-word;
+}
+
+.remove-note-btn {
+  flex-shrink: 0;
+  margin-left: 12px;
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  border-radius: 4px;
+  width: 26px;
+  height: 26px;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.remove-note-btn:hover {
+  background: var(--accent);
+  color: white;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 24px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* Section header row */
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--dark);
+}
+
+.section-header h2 {
+  font-size: 20px;
+  color: var(--accent);
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.toggle-btn {
+  font-size: 12px;
+  padding: 3px 10px;
+  cursor: pointer;
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  border-radius: 4px;
+}
+
+.toggle-btn:hover {
+  background: var(--accent);
+  color: white;
+}
+
+/* Header controls */
+.header-controls {
+  margin-left: auto;
+}
+
+.ctrl-btn {
+  font-size: 13px;
+  padding: 8px 14px;
+  cursor: pointer;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.ctrl-btn:hover {
+  background: white;
+  color: var(--dark);
+}
+
+
+.site-header {
+  flex-direction: column;
+  text-align: center;
+}
+
+.links {
+  justify-content: center;
+}
